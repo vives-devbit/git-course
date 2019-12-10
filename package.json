@@ -1,0 +1,25 @@
+{
+  "name": "git-course",
+  "version": "0.0.1",
+  "description": "Git course website",
+  "main": "readme.md",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vives-devbit/git-course"
+  },
+  "author": "Piet Cordemans <piet.cordemans@vives.be>",
+  "license": "Creative Commons Attribution-ShareAlike 4.0 International License",
+  "bugs": {
+    "url": "https://github.com/vives-devbit/git-course/issues"
+  },
+  "homepage": "https://github.com/vives-devbit/git-course#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "vuepress": "^1.2.0"
+  }
+}
