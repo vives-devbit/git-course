@@ -57,7 +57,19 @@ npm install -g yo
 npm install -g generator-innovet-vuepress-course
 ```
 
-## Creating a VuePress Repo
+## Creating a new VuePress Course
+
+The next steps describe how to setup a new VuePress course. These will need to be revisited every time you create a new course.
+
+### Creating a GitHub repo
+
+First thing to do is to create a new GitHub repository. Make sure to skip initialization or adding a `.gitignore` or `README.md` file.
+
+![New Repository](./assets/new_repo.png)
+
+Next note the full URL of the repository in the address bar. You will need it when creating a new VuePress project. In the previous example the url is `https://github.com/VIVES-Elektronica-ICT-Brugge/communicatie-technologie`.
+
+### Create VuePress Project
 
 Creating a new VuePress course is easily achieved using the generator. Just open a PowerShell window where you wish to place your new course and start the generator:
 
