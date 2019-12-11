@@ -10,7 +10,7 @@ The steps described below will get you started with a basic VuePress website, re
 
 Before starting you will need to install some required tools. These steps will only need to be performed once.
 
-## Node.js
+### Node.js
 
 Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside of a browser. Node.js lets developers use JavaScript to write command line tools and for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user's web browser. Consequently, Node.js represents a "JavaScript everywhere" paradigm,unifying web-application development around a single programming language, rather than different languages for server- and client-side scripts.
 
@@ -18,7 +18,7 @@ To install Node.js, navigate to [nodejs.org](https://nodejs.org) and download th
 
 Follow the installation wizard. You may need to restart your system.
 
-## Visual Studio Code
+### Visual Studio Code
 
 Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is **available for Windows, macOS and Linux**. It comes with built-in support for JavaScript, TypeScript and Node.js and has a rich ecosystem of **extensions** for other languages (such as C++, C#, Java, Python, PHP, Go) and runtimes (such as .NET and Unity).
 
@@ -28,7 +28,7 @@ Navigate to [code.visualstudio.com](https://code.visualstudio.com/) and download
 
 Follow the installation wizard.
 
-## VuePress Package
+### VuePress Package
 
 VuePress is a minimalistic Vue-powered static site generator that allows static webpages to be generated from markdown files. This makes it a favorite among many developers to document projects and such.
 
@@ -42,7 +42,7 @@ npm install -g vuepress
 
 You can find much more information at [vuepress.vuejs.org](https://vuepress.vuejs.org).
 
-## Yeoman
+### Yeoman
 
 Yeoman helps you to kickstart new projects, prescribing best practices and tools to help you stay productive.
 
