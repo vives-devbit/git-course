@@ -50,8 +50,25 @@ To do so, we provide a generator ecosystem. A generator is basically a plugin th
 
 Yeoman is the tool we will be using to setup a new VuePress course. It will make use of a generator that was tweaked for building courses for this project.
 
-Open up a PowerShell window and install Yeoman globally.
+Open up a PowerShell window and install Yeoman and the course generator globally.
 
 ```bash
 npm install -g yo
+npm install -g generator-innovet-vuepress-course
 ```
+
+## Creating a VuePress Repo
+
+Creating a new VuePress course is easily achieved using the generator. Just open a PowerShell window where you wish to place your new course and start the generator:
+
+```bash
+yo innovet-vuepress-course
+```
+
+::: warning OneDrive
+Best not to place VuePress courses (any NodeJS projects for that matter) on OneDrive as they tend to generate a lot of files inside of the `node_modules` directory. OneDrive does not like this very much.
+:::
+
+You will be asked a couple of questions which you will need to answer. These will configure your new course website.
+
+![Project Successfully Generated](./assets/new_course_using_generator.png)
