@@ -54,6 +54,18 @@ Always make sure to be in a clean state when merging changes or pulling changes.
 
 Once tested thoroughly, you can push it using `git push origin master`.
 
+## Think Content not Style
+
+Migrate small sections at a time when moving content from Word to markdown. Not a good idea to copy whole pages.
+
+Sometimes it's best to work paragraph per paragraph. Try not to focus on styling and layout but rather on the content itself. Let markdown and VuePress do the hard word for you.
+
+## Referencing Images
+
+While very important in scientific documents, VuePress and markdown do not allow one to directly reference images by for example their caption number.
+
+Try to avoid sentences such as `in the figure below ...` because there is also no option to style how images are include in pages when printing to a PDF or printer. The image may as well land on the next page. It's better practice to reference images and tables using sentences such as `in the next table ...`
+
 ## Use Tags for versions
 
 Want to refactor part of your course at the end of the semester? Than it is also a good idea to tag the current state of your course. This way you will easily find your way back if ever needed.
