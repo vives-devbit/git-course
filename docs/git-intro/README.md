@@ -123,14 +123,74 @@ Provide a suitable commit message. If you forgot the -m parameter git will start
 
 ## Viewing
 
+A git repository contains a lot of information. Getting an overview of all commits or checking the differences between two commits are common operations when using git.
+
 ### View the log
 
-In order to view all commits
+Git log gives an overview of all commits. 
 
 ```bash
 git log
 ```
 :::output
+commit 1240e9ae53707b9cd73ced65327f1b23af359f7b
+Author: Piet Cordemans <s...@gmail.com>
+Date:   Thu Dec 12 10:02:30 2019 +0100
+
+    posh-git installation debugged
+
+commit 15cf28af09af8fc8ba3b4f0ebe02b50e56759c54
+Author: Piet Cordemans <s...@gmail.com>
+Date:   Thu Dec 12 09:24:21 2019 +0100
+
+    posh git installation instructions
 :::
 
+1. Each commit is identified by a hash. Referring to the commit is usually by part of the hash. Usually 6 to 8 characters are enough to identify the hash of the commit.
+2. The author of the commit is included
+3. As well as the timestamp of the commit
+4. Finally the commit message is shown. In order to quickly identify the commit, an informative commit message is essential.
+
+To view a condensed log containing only the commit hashes and messages
+
+```bash
+git log --pretty=oneline
+```
+
 ### View changes between commits
+
+Git diff shows all differences between two commits, the staging area or the working copy.
+
+To show differences between the working copy and the HEAD commit:
+
+```bash
+git diff
+```
+
+::: tip
+The HEAD commit is the latest commit in the current branch.
+:::
+
+Viewing the differences between the staging area and the HEAD commit:
+
+```bash
+git diff --staged
+```
+
+Using the commit hashes it is also possible to view the changes between two commits, for example:
+
+```bash
+git diff 1240e9a 15cf28a
+```
+
+## Undoing changes
+
+Reverting all changes in the working copy which have not been staged or committed yet can be done with:
+
+```bash
+git restore <file>
+```
+
+::: warning
+As long as changes are not committed, they might be lost. Be sure to commit what you want to keep.
+:::
