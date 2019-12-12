@@ -8,11 +8,11 @@ In order to facilitate sharing repositories cloud-based services have been devel
 
 ## GitHub
 
-[GitHub](github.com) is a web-based hosting service for code. It is built upon Git and provides project management features, such as bug tracking, feature requests, task management, etc. GitHub is the largest host of source code in the world and hosts the largest open source community. It provides both public open source and private repositories. 
+[GitHub](https://github.com/) is a web-based hosting service for code. It is built upon Git and provides project management features, such as bug tracking, feature requests, task management, etc. GitHub is the largest host of source code in the world and hosts the largest open source community. It provides both public open source and private repositories. 
 
 ### Sign up 
 
-Register your free account at https://github.com/
+Register your free account at [GitHub](https://github.com/).
 
 ### SSH keys
 
