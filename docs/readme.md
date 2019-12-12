@@ -1,12 +1,12 @@
 # Course overview
 
-Git is a version management tool which is widely used in software development. This course is in essence a course on Git for those interested without any prior knowledge of version management tools. The goal is to introduce Git principles, tools and workflows for collaboration with others. Also, this course introduces Markdown, a simple markup language, which is used for documentation. If you're only interested in Git, the first five chapters should give you a thorough basis. 
+Git is a version management tool which is widely used in software development. This course is in essence a course on Git for those interested without any prior knowledge of version management tools. The goal is to introduce Git principles, tools and workflows for collaboration with others. Also, this course introduces Markdown, a simple markup language, which is used for documentation. If you're only interested in Git, the first five chapters should give you a thorough basis.
 
 The rest of the course uses Git and Markdown as basic blocks: Vuepress for static site generation, automatically deploying your Vuepress site to Netlify and Markdown-based presentations.
 
 ## Table of contents
 
-1. Version management 
+1. Version management
 2. Git tools
 3. Git intro
 4. Markdown
