@@ -5,7 +5,6 @@ module.exports = {
         nav: [
             { text: 'VIVES', link: 'https://www.vives.be' }
         ],
-        displayAllHeaders: true,
         sidebarDepth: 2,
         repo: 'https://github.com/vives-devbit/git-course',
         docsDir: 'docs',
