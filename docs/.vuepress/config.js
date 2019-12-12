@@ -28,4 +28,10 @@ module.exports = {
         lineNumbers: true,
     },
     serviceWorker: true,
+    plugins: [
+      ['container', {
+        type: 'output',
+        defaultTitle: 'Output',
+      }]
+    ],
 }
