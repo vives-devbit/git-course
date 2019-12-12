@@ -46,11 +46,39 @@ git config --global user.email "Firstname.Lastname@example.com"
 
 [Posh-git](https://github.com/dahlbyk/posh-git) is a Powershell module that provides a status summary of the git repository. It also provides tab completion on git commands, branch names, etc.
 
-1. Open an elevated Powershell terminal. Right-click on powershell and select run as administrator.
-2. Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Confirm2
-3. Install-Module PowerShellGet -Scope CurrentUser -Force -AllowClobber
-4. Add-PoshGitToProfile
-5. Open a new Powershell window
+Open an elevated Powershell terminal: right-click on Powershell and select run as administrator.
+
+```bash
+Set-ExecutionPolicy RemoteSigned -Confirm
+```
+
+Enter 'y' two times to confirm
+
+```bash
+Install-Module PowerShellGet -Force -AllowClobber
+```
+
+Enter 'y' to confirm
+
+```bash
+PowerShellGet\Install-Module posh-git -Force
+```
+
+```bash
+Add-PoshGitToProfile
+```
+
+Open a new Powershell window. If your current directory contains a git repository Powershell will display the current status information. For example:
+
+![Posh-git example](./assets/posh-git.png)
+
+Note: if your account is not the administrator, *Add-PoshGitToProfile* will add posh-git to the administrator profile. In that case you need to manually edit the Powershell profile script.
+
+```bash
+notepad $profile.CurrentUserAllHosts
+```
+Add **Import-Module posh-git** to this file and save.
+
 
 ## Visual Studio Code
 
@@ -66,4 +94,4 @@ Follow the installation wizard.
 
 Fork is a modern git GUI client. Although this course focusses on command line tools, Fork is a nice graphical alternative.
 
-Download the [Fork installer](https://fork.dev/) 
+Download the [Fork installer](https://fork.dev/). 
