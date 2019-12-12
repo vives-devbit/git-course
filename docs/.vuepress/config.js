@@ -19,7 +19,8 @@ module.exports = {
             '/collaborating/',
             '/vuepress/',
             '/netlify/',
-            '/marp/'           
+            '/marp/',
+            '/migrating-to-markdown/',
         ]           
         
     },
