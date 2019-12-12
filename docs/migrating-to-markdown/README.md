@@ -64,7 +64,40 @@ Sometimes it's best to work paragraph per paragraph. Try not to focus on styling
 
 While very important in scientific documents, VuePress and markdown do not allow one to directly reference images by for example their caption number.
 
-Try to avoid sentences such as `in the figure below ...` because there is also no option to style how images are include in pages when printing to a PDF or printer. The image may as well land on the next page. It's better practice to reference images and tables using sentences such as `in the next table ...`
+Try to avoid sentences such as `in the figure below ...` because there is also no option to style how images are include in pages when printing to a PDF or printer. The image may as well land on the next page. It's better practice to reference images and tables using sentences such as `in the next table ...`.
+
+## Adding Images
+
+When adding images to your chapters, follow these guidelines to make sure they can displayed by VuePress:
+
+* Place the images in the `assets` folder of the correct chapter.
+* Use a relative path starting with `./assets` to include your image in markdown.
+* **Don't use spaces** in the name of images. Use dashes `-` and underscores `_` instead.
+* Try to give all your images **lower-case names**.
+
+### Sizing Images
+
+There is now way to size your images. They are automatically sized based on their resolution and the available place on the VuePress page. This allows the images to be decently rendered on mobile devices too.
+
+If your image is too large, consider providing them in a smaller resolution or by adding making the canvas bigger with a transparent background.
+
+## Fixing Problems
+
+In the beginning you may hit some problems when not yet used to the markdown and VuePress life. It may occur that your local development website shows an empty page because it could not convert the markdown to html.
+
+This is often due to a missing image or incorrect path. The quickest way to find these errors is to use the VSCode preview. It will show missing images using an broken image.
+
+![Missing Image](./assets/missing_image.png)
+
+If that does not give you a clue, you can always activate a local build process using the command
+
+```bash
+npm run docs:build
+```
+
+Which will output errors as encountered to the terminal:
+
+![Missing Image Error](./assets/missing_image_terminal.png)
 
 ## Use Tags for versions
 
