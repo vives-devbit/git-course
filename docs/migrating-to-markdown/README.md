@@ -85,6 +85,14 @@ When adding images to your chapters, follow these guidelines to make sure they c
 * **Don't use spaces** in the name of images. Use dashes `-` and underscores `_` instead.
 * Try to give all your images **lower-case names**.
 
+## Adding Formulas
+
+For the moment we have not yet thoroughly tested this feature but there seems to be a plugin available for adding LaTex formules called [vuepress-plugin-mathjax](https://vuepress.github.io/en/plugins/mathjax/).
+
+Other options include online LaTex image generators such as [codecogs](https://www.codecogs.com/latex/eqneditor.php).
+
+We will look into other options in the near future.
+
 ### Sizing Images
 
 There is now way to size your images. They are automatically sized based on their resolution and the available place on the VuePress page. This allows the images to be decently rendered on mobile devices too.
