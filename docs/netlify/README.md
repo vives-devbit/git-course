@@ -39,3 +39,21 @@ The basic configuration should not have to be changed. Your VuePress website has
 Hit the `Deploy Site` button and wait for the build to finish.
 
 ![Initial Deploy](./assets/initial_deploy.png)
+
+From now on off, every time you push commits to your master branch on GitHub, your site will automatically build and be deployed on Netlify.
+
+At this moment your website can be accessed via a random generated url shown in the top-left of your overview on Netlify. In our example this is [https://kind-knuth-5315e0.netlify.com](https://kind-knuth-5315e0.netlify.com). Click the link on Netlify to view your fancy new course site.
+
+## Changing the Generated URL
+
+Netlify allows you to change the generated URL in a more user-friendly url of your own choosing. Click `Domain settings` and select the three dots next to the domain name `...` and choose `Edit site name`.
+
+![Changing the Domain Name](./assets/change_domain_name.png)
+
+Enter a more sensible name for your website.
+
+![Choosing a more Sensible Domain Name](./assets/domain_name.png)
+
+You should immediately be able to access your site via the new domain name.
+
+![Final Result](./assets/final_result.png)
