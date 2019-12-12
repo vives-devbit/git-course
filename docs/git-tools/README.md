@@ -20,7 +20,7 @@ git
 
 When you type in the command git, the following output is given, if Git is installed succesfully and it has been added to the PATH environment variable.
 
-```bash
+:::output
 usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
            [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
            [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
@@ -33,7 +33,7 @@ start a working area (see also: git help tutorial)
    clone     Clone a repository into a new directory
    init      Create an empty Git repository or reinitialize an existing one
 
-```
+:::
 
 After installation, Git must be configured with a name and e-mail address. This is important because every Git commit is accompanied with this information.
 
@@ -46,7 +46,9 @@ git config --global user.email "Firstname.Lastname@example.com"
 
 [Posh-git](https://github.com/dahlbyk/posh-git) is a Powershell module that provides a status summary of the git repository. It also provides tab completion on git commands, branch names, etc.
 
-Open an elevated Powershell terminal: right-click on Powershell and select run as administrator.
+::: warning Open an elevated Powershell terminal
+Right-click on Powershell and select run as administrator.
+:::
 
 ```bash
 Set-ExecutionPolicy RemoteSigned -Confirm
