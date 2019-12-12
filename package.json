@@ -1,6 +1,6 @@
 {
   "name": "git-course",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Git course website",
   "main": "README.md",
   "scripts": {
@@ -12,10 +12,10 @@
     "type": "git",
     "url": "git+https://github.com/vives-devbit/git-course"
   },
-  "author":     {
+  "author": {
     "name": "Piet Cordemans",
     "email": "piet.cordemans@vives.be",
-    "url": "https://www.devbit.be"
+    "url": "https://github.com/pcordemans"
   },
   "contributors": [
     {

@@ -4,11 +4,11 @@ title: Migrating to Markdown
 
 # Migrating an Existing Course to Markdown
 
-This chapter will aim to give some tips and tricks on how to migrate an existing Word course to a markdown file.
+This chapter will aim to give some tips and tricks on how to migrate an existing Word course to a Markdown file.
 
 ## Use Visual Studio Code
 
-At this moment, Visual Studio Code is your best choice as a text editor for this task. It has extensions that help you with markdown and it can preview markdown while you type it.
+At this moment, Visual Studio Code is your best choice as a text editor for this task. It has extensions that help you with Markdown and it can preview Markdown while you type it.
 
 The following plugins can come in handy:
 
@@ -27,7 +27,7 @@ Do note that some GitHub or VuePress flavored markdown may not be previewed corr
 
 ## Local Development Server
 
-While the markdown preview is perfect for single page alterations, its always a good idea to keep your local development server running in the background and checking the website periodically in a browser.
+While the Markdown preview is perfect for single page alterations, its always a good idea to keep your local development server running in the background and checking the website periodically in a browser.
 
 Launch the local development server using the following command:
 
@@ -66,34 +66,34 @@ Once tested thoroughly, you can push it using `git push origin master`.
 
 ## Think Content not Style
 
-Migrate small sections at a time when moving content from Word to markdown. Not a good idea to copy whole pages.
+Migrate small sections at a time when moving content from Word to Markdown. Not a good idea to copy whole pages.
 
-Sometimes it's best to work paragraph per paragraph. Try not to focus on styling and layout but rather on the content itself. Let markdown and VuePress do the hard word for you.
+Sometimes it is best to work paragraph per paragraph. Try not to focus on styling and layout but rather on the content itself. Let Markdown and VuePress do the hard word for you.
 
 ## Referencing Images
 
-While very important in scientific documents, VuePress and markdown do not allow one to directly reference images by for example their caption number.
+While very important in scientific documents, VuePress and Markdown do not allow one to directly reference images by for example their caption number.
 
-Try to avoid sentences such as `in the figure below ...` because there is also no option to style how images are include in pages when printing to a PDF or printer. The image may as well land on the next page. It's better practice to reference images and tables using sentences such as `in the next table ...`.
+Try to avoid sentences such as `in the figure below ...` because there is also no option to style how images are include in pages when printing to a PDF or printer. The image may as well land on the next page. It is better practice to reference images and tables using sentences such as `in the next table ...`.
 
 ## Adding Images
 
 When adding images to your chapters, follow these guidelines to make sure they can displayed by VuePress:
 
 * Place the images in the `assets` folder of the correct chapter.
-* Use a relative path starting with `./assets` to include your image in markdown.
+* Use a relative path starting with `./assets` to include your image in Markdown.
 * **Don't use spaces** in the name of images. Use dashes `-` and underscores `_` instead.
 * Try to give all your images **lower-case names**.
 
 ### Sizing Images
 
-There is now way to size your images. They are automatically sized based on their resolution and the available place on the VuePress page. This allows the images to be decently rendered on mobile devices too.
+There is no way to size your images. They are automatically sized based on their resolution and the available place on the VuePress page. This allows the images to be decently rendered on mobile devices too.
 
 If your image is too large, consider providing them in a smaller resolution or by adding making the canvas bigger with a transparent background.
 
 ## Fixing Problems
 
-In the beginning you may hit some problems when not yet used to the markdown and VuePress life. It may occur that your local development website shows an empty page because it could not convert the markdown to html.
+In the beginning you may hit some problems when not yet used to the Markdown and VuePress life. It may occur that your local development website shows an empty page because it could not convert the Markdown to html.
 
 This is often due to a missing image or incorrect path. The quickest way to find these errors is to use the VSCode preview. It will show missing images using an broken image.
 
@@ -111,7 +111,7 @@ Which will output errors as encountered to the terminal:
 
 ## Use Tags for versions
 
-Want to refactor part of your course at the end of the semester? Than it is also a good idea to tag the current state of your course. This way you will easily find your way back if ever needed.
+Want to refactor part of your course at the end of the semester? Then it is also a good idea to tag the current state of your course. This way you will easily find your way back if ever needed.
 
 ![Tags](./assets/tags.png)
 
@@ -123,3 +123,12 @@ git push origin --tags
 ```
 
 The label or name of the tag can be chosen as you wish.
+
+## Copyright
+
+Copyright law is quite restrictive. Bluntly speaking, if you have no explicit permission you may not use the material. Most educational books contain a description what is understood as educational purposes or describes the procedure to ask for permission from the author. However, a lot of material is shared under open and free culture licenses. 
+
+* The [Creative Commons](https://creativecommons.org/) is a very popular license for media and text. For example: Wikipedia uses it. It is possible to select a number of features, such as do you allow adaptations or commercial use of your work? Attribution is needed in order to make use of the material.
+* The [MIT](https://opensource.org/licenses/MIT) license]is a very brief open source software license. It does not include any limitations, only denying liability.
+* The [GPLv3](https://opensource.org/licenses/gpl-license) license is a viral license, a.k.a. a copyleft. Any adaptations of software under the GPL license must be released with a GPL license.
+* The [Apache-2.0](https://opensource.org/licenses/Apache-2.0) license requires a NOTICE text file in which is described which adaptations have been made by whom.
