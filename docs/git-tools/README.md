@@ -20,7 +20,7 @@ git
 
 When you type in the command git, the following output is given, if Git is installed succesfully and it has been added to the PATH environment variable.
 
-::: output
+```bash
 usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
            [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
            [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
@@ -33,7 +33,7 @@ start a working area (see also: git help tutorial)
    clone     Clone a repository into a new directory
    init      Create an empty Git repository or reinitialize an existing one
 
-:::
+```
 
 After installation, Git must be configured with a name and e-mail address. This is important because every Git commit is accompanied with this information.
 
