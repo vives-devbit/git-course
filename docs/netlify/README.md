@@ -37,3 +37,5 @@ The basic configuration should not have to be changed. Your VuePress website has
 ![Setup Your Site Deployment](./assets/deploy_settings.png)
 
 Hit the `Deploy Site` button and wait for the build to finish.
+
+![Initial Deploy](./assets/initial_deploy.png)
