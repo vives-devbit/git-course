@@ -87,11 +87,35 @@ You will be asked a couple of questions which you will need to answer. These wil
 
 ## Running a Local Test Server
 
-TODO
+To start a local development server execute the following command inside the root folder of this project:
 
 ```bash
 npm run docs:dev
 ```
+
+This will start a local server and automatically convert the markdown files to html files.
+
+![Start Local Development Server](./assets/local_dev_server.png)
+
+Open a browser to the web address shown by the `npm run` command. Most typically this is [http://localhost:8080](http://localhost:8080).
+
+## Pushing to GitHub
+
+Once you have tested that the VuePress site works it is a good idea to commit the generated project and push it all to your new GitHub repository.
+
+:::tip Already a Git Repository
+Note that Yeoman already setup your project as a Git repository.
+:::
+
+To accomplish this, add all the new files, commit them and push the commit to origin.
+
+```bash
+git add .
+git commit -m "Start of course"
+git push origin master
+```
+
+![Initial Push](./assets/initial_push.png)
 
 ## Adding Pages
 
