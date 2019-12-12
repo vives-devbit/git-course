@@ -208,11 +208,64 @@ More accurately, a branch is a pointer to a commit. For instance, the master bra
 
 ![Master branch](./assets/master.png)
 
+The **HEAD** pointer points to the commit of the working copy. In this example, HEAD points to the same commit as the master branch. 
+
+![HEAD](./assets/head.png)
+
+Use the git checkout command to jump back to an old commit.
+
+```bash
+git checkout <hash of the commit>
+```
+
+![Detached HEAD](./assets/detached.png)
+
+:::warning
+Checking out a commit without creating a branch, leaves the working copy in a detached HEAD state. This state is sort of a read only state, where you can look at the files at the state of the given commit, but does not allow you to make new commits. Create a new branch if you want to make a commit.
+:::
+
+### Create a new branch
+
+In most of the cases you want to create a new branch, i.e. a new pointer in the graph and checkout that branch. Use the checkout command with the -b parameter and give a name to the new branch.
+
+```bash
+git checkout -b dev
+```
+
+For example this command will create a dev branch and jump to the dev branch. The dev branch effectively points to the same commit as the master branch.
+
+![Checkout new branch dev](./assets/checkout.png)
+
+Then start committing at the new branch:
+
+```bash
+git commit -m"this message explains everything"
+```
+
+This will move forward the dev branch and the HEAD pointer. The master branch remains unchanged.
+
+![Committing to the branch dev](./assets/commit-dev.png)
+
+### Fast forwarding
+
+When two branches differ, but their history is common, one branch is lagging behind the other. Merging these two branches will perform a fast forward. This will result in both branches pointing at the same commit.
+
+::: tip
+Before merging, always checkout the branch you want to merge to.
+:::
+
+```bash
+git checkout master
+git merge dev
+```
+![Fast forwarding the master branch](./assets/fast-forwarding.png)
+
 ## Forking and pull requests
 
 GitHub provides user authorization for each GitHub repository. Only team members can commit to the repository. However, by means of a pull request GitHub provides the possibility for someone who isn't a team member to contribute. Pull requests are an important means to share code and contribute to open source projects. The workflow for a pull request is:
 
 1. In GitHub: fork the repository. CLick the fork button in the upper right corner. This creates a clone of the repository in your account. In this repository you can do what you want, as it is your own repository.
+
     ![Click the fork button](./assets/fork.png)
 2. Clone the forked repository to your local machine.
     ```bash
