@@ -123,12 +123,10 @@ You can checkout the result on GitHub.
 
 ## Adding Pages
 
-TODO
+Adding pages (chapters as it were) to the VuePress website can be achieved by using the generator.
 
-Command to add pages
+```bash
+yo innovet-vuepress-course:page
+```
 
-## Adding Images
-
-TODO
-
-Just explain they need to be put in asset folder
+This creates a `[folder]/README.md` under `docs` and a `[folder]/assets` for your images. Overwrite the conflicts to persist the theme configurations.
