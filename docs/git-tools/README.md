@@ -10,6 +10,8 @@ When going through the installer, adjust the PATH environment accordingly. If yo
 
 ![Adjust path](./assets/adjustPATH.png)
 
+When selecting a default editor: select Visual Studio Code.
+
 When installed correctly, open a command prompt \(hit windows key, start typing cmd and hit enter\).  All command line input is indicated in the grey rectangle.
 
 ```bash
@@ -40,6 +42,16 @@ git config --global user.name "Firstname Lastname"
 git config --global user.email "Firstname.Lastname@example.com"
 ```
 
+## Posh-git 
+
+[Posh-git](https://github.com/dahlbyk/posh-git) is a Powershell module that provides a status summary of the git repository. It also provides tab completion on git commands, branch names, etc.
+
+1. Open an elevated Powershell terminal. Right-click on powershell and select run as administrator.
+2. Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Confirm2
+3. Install-Module PowerShellGet -Scope CurrentUser -Force -AllowClobber
+4. Add-PoshGitToProfile
+5. Open a new Powershell window
+
 ## Visual Studio Code
 
 Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is **available for Windows, macOS and Linux**. It comes with built-in support for JavaScript, TypeScript, Node.js, and Git and has a rich ecosystem of **extensions** for other languages (such as C++, C#, Java, Python, PHP, Go) and runtimes (such as .NET and Unity).
@@ -49,3 +61,9 @@ Basically it is a great editor for markdown and many other coding projects.
 Navigate to [code.visualstudio.com](https://code.visualstudio.com/) and download the latest version.
 
 Follow the installation wizard.
+
+## Fork.dev
+
+Fork is a modern git GUI client. Although this course focusses on command line tools, Fork is a nice graphical alternative.
+
+Download the [Fork installer](https://fork.dev/) 
