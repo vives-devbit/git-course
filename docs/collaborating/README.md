@@ -63,6 +63,18 @@ GitHub uses SSH with RSA public key encryption to authenticate users with git.
 7. Paste your key into the *key* field
 8. Click **Add SSH key**
 
+### GitHub repository overview
+
+GitHub provides visuals of the Git repository
+* View commits history with contributor, diff and hash
+* View remote branches
+* View releases (git tags)
+
+Furthermore it offers project management features, not limited to:
+* Team members management
+* Issue management
+* Wiki
+* Actions
 
 ### Create a new repository
 
@@ -153,3 +165,84 @@ For example to pull the master branch from origin:
 ```bash
 git pull origin master
 ```
+
+There are three possible outcomes after pulling a branch from a remote.
+
+1. The local and remote branch are identical. Nothing happens.
+2. The local and remote branch differ, but git automagically merges all differences without human intervention. Your local repository contains the merged branch, the remote repository did not change.
+3. The local and remote branch differ and git detects a merge conflict. Human action is required to resolve the **merge conflict**. 
+
+## Merge conflicts
+
+> Rather sooner than later you will change something somebody else has also changed.
+
+Merge conflicts arise when changes between two commits affect the same lines in one or more files. Git inserts *conflict dividers* to indicate where the merge conflict happened and what contents both commits propose at the conflict.
+
+For example:
+
+::: output
+    <<<<<<< HEAD
+    Some text in conflict in a commit
+    ========
+    other text in conflict in the other commit
+    >>>>>>> someBranch
+:::
+
+It is possible to manually remove the conflict dividers and select the new contents. Make a new commit indicating that the merge conflict has been resolved.
+
+Visual Studio Code offers some tools to help. In a file with a merge conflict, clicking one of the possible actions resolves the conflict. Afterwards commit the changes resolving the conflict to the repository.
+
+![Visual Studio code supports resolving merge conflicts](./assets/conflict.png)
+
+## Branches
+
+Arguably, the most powerful feature of git is to branch locally, in a true distributed fashion. Branching is creating an alternative set of commits, concurrently from other branches. In essence, if commits are nodes in a graph, then branching allows the creation of alternative paths in the graph.
+
+![Commit history is a graph](./assets/graph.png)
+
+Branching is creating an alternative set of commits, which exists concurrently from other branches. Merging is combining two branches in a new merge commit.
+
+![Branching & Merging](./assets/branching.png)
+
+More accurately, a branch is a pointer to a commit. For instance, the master branch is the default branch in a git repository, which usually points to the latest commit of a stable revision of the project.
+
+![Master branch](./assets/master.png)
+
+## Forking and pull requests
+
+GitHub provides user authorization for each GitHub repository. Only team members can commit to the repository. However, by means of a pull request GitHub provides the possibility for someone who isn't a team member to contribute. Pull requests are an important means to share code and contribute to open source projects. The workflow for a pull request is:
+
+1. In GitHub: fork the repository. CLick the fork button in the upper right corner. This creates a clone of the repository in your account. In this repository you can do what you want, as it is your own repository.
+    ![Click the fork button](./assets/fork.png)
+2. Clone the forked repository to your local machine.
+    ```bash
+    git clone git@github.com/username/repository.git
+    ```
+3. Create a feature branch 
+    ```bash
+    git checkout -b feature/fooBar
+    ```
+4. Commit your changes 
+    ```bash
+    git add .
+    git commit -m "Add some fooBar"
+    ```
+5. Push the branch to your GitHub repository 
+    ```bash
+    git push origin feature/fooBar
+    ```
+6. Create a new Pull Request in the original repository on GitHub. Click Compare & pull request
+    ![Click the Compare & pull request button](./assets/pull-request.png)
+
+::: tip
+Many projects have their own procedure how to contribute. This procedure is usually found in the project documentation. When this procedure is not provided, it might be a good idea to open an issue to explain the purpose of your pull request.
+:::
+
+## GitHub Education
+
+GitHub has an [education program](https://education.github.com/). Part of this education program is [GitHub Classroom](https://classroom.github.com/). With GitHub Classroom it is possible to manage classroom assignments. An assignment starts from a repository the teacher provides. Each student clones this repository and adds a solution. All solutions are easily aggregated with Classroom Assistant.
+
+## In depth Git
+
+* [Pro Git by Scott Chacon and Ben Straub](https://git-scm.com/book/en/v2)
+* [Atlassian Git tutorial](https://www.atlassian.com/git/tutorials)
