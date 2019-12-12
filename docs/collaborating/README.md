@@ -258,7 +258,29 @@ Before merging, always checkout the branch you want to merge to.
 git checkout master
 git merge dev
 ```
+
 ![Fast forwarding the master branch](./assets/fast-forwarding.png)
+
+### Branching and merging
+
+In this scenario a dev branch is one commit ahead of master. First, checkout master. Then add a commit to the master branch. Now dev and master are two siblings in the commit tree.
+
+![Actual branching](./assets/actual-branching.png)
+
+```bash
+git checkout master
+git commit -m"descriptive message"
+```
+
+Merging two branches can be easily done with merge. First, checkout the branch which you want to merge to. Then git merge the branch you want to merge with. Resolve any merge conflicts if needed.
+
+![Merging dev into master](./assets/merging.png)
+
+This example continues from the previous scenario. The master branch is the branch we want to merge dev into. HEAD is already pointing to master, so a checkout of master is not needed. Executing the merge command merges dev into master.
+
+```bash
+git merge dev
+```
 
 ## Forking and pull requests
 
