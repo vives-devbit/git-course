@@ -25,6 +25,16 @@ Just hit `CTRL-SHIFT-P` and select `Markdown: Open Preview` or use the shortcut 
 Do note that some GitHub or VuePress flavored markdown may not be previewed correctly. Just ignore those and check them on the local site (running with the development server). Typical examples are containers like these.
 :::
 
+## Local Development Server
+
+While the markdown preview is perfect for single page alterations, its always a good idea to keep your local development server running in the background and checking the website periodically in a browser.
+
+Launch the local development server using the following command:
+
+```shell
+npm run docs:dev
+```
+
 ## Use a development branch
 
 Best is to use a `development` of `dev` branch to work on in git. This will make sure you always have a working version in master.
