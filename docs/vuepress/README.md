@@ -84,3 +84,23 @@ Best not to place VuePress courses (any NodeJS projects for that matter) on OneD
 You will be asked a couple of questions which you will need to answer. These will configure your new course website.
 
 ![Project Successfully Generated](./assets/new_course_using_generator.png)
+
+## Running a Local Test Server
+
+TODO
+
+```bash
+npm run docs:dev
+```
+
+## Adding Pages
+
+TODO
+
+Command to add pages
+
+## Adding Images
+
+TODO
+
+Just explain they need to be put in asset folder
