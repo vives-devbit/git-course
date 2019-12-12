@@ -4,7 +4,7 @@ Git was created by Linus Torvalds for development of the Linux kernel aimed towa
 
 ## Git installation
 
-Get the latest Git release from [git-scm.com. ](https://git-scm.com/)Although many Graphical User Interface \(GUI\) clients for Git exist, this tutorial is going to focus on the command line tool. Mainly because the command line interface is a valuable tool for software development and system administration.
+Get the latest Git release from [git-scm.com](https://git-scm.com/). Although many Graphical User Interface \(GUI\) clients for Git exist, this tutorial is going to focus on the command line tool. Mainly because the command line interface is a valuable tool for software development and system administration.
 
 When going through the installer, adjust the PATH environment accordingly. If you forget to select to use Git from the Windows Command Prompt it is possible to change the PATH environment variable to include the Git\bin directory.
 
@@ -18,7 +18,7 @@ When installed correctly, open a command prompt \(hit windows key, start typing 
 git
 ```
 
-When you type in the command git, the following output is given, if Git is installed succesfully and it has been added to the PATH environment variable.
+When you type in the command git, the following output is given, if Git is installed successfully and it has been added to the `PATH` environment variable.
 
 ```bash
 usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
@@ -42,7 +42,7 @@ git config --global user.name "Firstname Lastname"
 git config --global user.email "Firstname.Lastname@example.com"
 ```
 
-## Posh-git 
+## Posh-git
 
 [Posh-git](https://github.com/dahlbyk/posh-git) is a Powershell module that provides a status summary of the git repository. It also provides tab completion on git commands, branch names, etc.
 
@@ -79,8 +79,8 @@ Note: if your account is not the administrator, *Add-PoshGitToProfile* will add 
 ```bash
 notepad $profile.CurrentUserAllHosts
 ```
-Add **Import-Module posh-git** to this file and save.
 
+Add **Import-Module posh-git** to this file and save.
 
 ## Visual Studio Code
 
@@ -96,4 +96,4 @@ Follow the installation wizard.
 
 Fork is a modern git GUI client. Although this course focusses on command line tools, Fork is a nice graphical alternative.
 
-Download the [Fork installer](https://fork.dev/). 
+Download the [Fork installer](https://fork.dev/).

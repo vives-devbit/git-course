@@ -186,7 +186,6 @@ for (int x = 0; x < 100; x++) {
 ```
 :::
 
-
 ## Blockquote
 
 To create a blockquote, add a `>` in front of a paragraph.

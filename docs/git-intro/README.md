@@ -8,7 +8,7 @@ Navigate to the project folder and execute in a terminal:
 git init
 ```
 
-The git init command will initialize a new repository. 
+The git init command will initialize a new repository.
 
 ![Repository](./assets/repository.png)
 
@@ -44,13 +44,14 @@ Removed: staging/test
 
 ### Staging the commit
 
-Before committing the working copy to the repository, the files are staged to the **staging** area. Staging allows to prepare the commit, see what will be committed and make changes before actually committing. 
+Before committing the working copy to the repository, the files are staged to the **staging** area. Staging allows to prepare the commit, see what will be committed and make changes before actually committing.
 
 ![Staging files before committing them to the repository](./assets/staging.png)
 
 ```bash
 git add .
 ```
+
 The git add . command stages all changes in the working copy.
 
 Alternatively, it is possible to stage a single file.
@@ -65,7 +66,7 @@ Or to stage a directory and everything included.
 git add <directory>
 ```
 
-In order to unstage a file, so it is not longer included in the staging area, use 
+In order to unstage a file, so it is not longer included in the staging area, use:
 
 ```bash
 git restore --staged <file>
@@ -73,8 +74,8 @@ git restore --staged <file>
 
 ::: tip What should be committed?
 Source files: code, configuration files, markdown, assets such as figures
-In short: all files which cannot be generated. 
-::: 
+In short: all files which cannot be generated.
+:::
 
 ### Ignoring files
 
@@ -93,18 +94,18 @@ node_modules/
 
 Explanation for the rules of the example line by line:
 
-1. Do not stage the file readme.pdf. 
+1. Do not stage the file readme.pdf.
 2. Do not stage the directory node_modules.
 3. Do not stage any .bin files. The * is a wildcard.
 4. Stage library.bin. The ! indicates an exception to a previous rule.
 
-Commit the .gitignore file to the repository, so all cloned repositories use the same .gitignore file. 
+Commit the `.gitignore` file to the repository, so all cloned repositories use the same `.gitignore` file.
 
-If a file is already committed to the repository, including it in the .gitignore file will not remove it from the repository.
+If a file is already committed to the repository, including it in the `.gitignore` file will not remove it from the repository.
 
 ### Current status
 
-At any given moment it is possible to ask for the current status of the working copy. 
+At any given moment it is possible to ask for the current status of the working copy.
 
 ```bash
 git status
@@ -119,6 +120,7 @@ Once the staging area is in the desired state, commit all staged changes with
 ```bash
 git commit -m"tell why you made the commit in this commit message"
 ```
+
 Provide a suitable commit message. If you forgot the -m parameter git will start the default editor to construct a message.
 
 ## Viewing
@@ -127,11 +129,12 @@ A git repository contains a lot of information. Getting an overview of all commi
 
 ### View the log
 
-Git log gives an overview of all commits. 
+Git log gives an overview of all commits.
 
 ```bash
 git log
 ```
+
 ::: output
 commit 1240e9ae53707b9cd73ced65327f1b23af359f7b
 Author: Piet Cordemans <s...@gmail.com>
