@@ -22,7 +22,7 @@ Follow the installation wizard. You may need to restart your system.
 
 Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is **available for Windows, macOS and Linux**. It comes with built-in support for JavaScript, TypeScript and Node.js and has a rich ecosystem of **extensions** for other languages (such as C++, C#, Java, Python, PHP, Go) and runtimes (such as .NET and Unity).
 
-Basically its the perfect editor for markdown and many other coding projects.
+Basically it is the perfect editor for markdown and many other coding projects.
 
 Navigate to [code.visualstudio.com](https://code.visualstudio.com/) and download the latest version.
 
