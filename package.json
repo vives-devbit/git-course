@@ -2,7 +2,7 @@
   "name": "git-course",
   "version": "0.0.1",
   "description": "Git course website",
-  "main": "readme.md",
+  "main": "README.md",
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
@@ -13,6 +13,18 @@
     "url": "git+https://github.com/vives-devbit/git-course"
   },
   "author": "Piet Cordemans <piet.cordemans@vives.be>",
+  "contributors": [
+    {
+      "name": "Nico De Witte",
+      "email": "nico.dewitte@vives.be",
+      "url": "http://github.com/bioboost"
+    },
+    {
+      "name": "Sille Van Landschoot",
+      "email": "sille.vanlandschoot@vives.be",
+      "url": "https://www.devbit.be"
+    }
+  ],
   "license": "Creative Commons Attribution-ShareAlike 4.0 International License",
   "bugs": {
     "url": "https://github.com/vives-devbit/git-course/issues"
