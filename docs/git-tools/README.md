@@ -20,7 +20,7 @@ git
 
 When you type in the command git, the following output is given, if Git is installed succesfully and it has been added to the PATH environment variable.
 
-:::output
+::: output
 usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
            [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
            [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]

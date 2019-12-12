@@ -132,18 +132,18 @@ Git log gives an overview of all commits.
 ```bash
 git log
 ```
-:::output
+::: output
 commit 1240e9ae53707b9cd73ced65327f1b23af359f7b
 Author: Piet Cordemans <s...@gmail.com>
 Date:   Thu Dec 12 10:02:30 2019 +0100
 
-    posh-git installation debugged
+  posh-git installation debugged
 
 commit 15cf28af09af8fc8ba3b4f0ebe02b50e56759c54
 Author: Piet Cordemans <s...@gmail.com>
 Date:   Thu Dec 12 09:24:21 2019 +0100
 
-    posh git installation instructions
+  posh git installation instructions
 :::
 
 1. Each commit is identified by a hash. Referring to the commit is usually by part of the hash. Usually 6 to 8 characters are enough to identify the hash of the commit.
