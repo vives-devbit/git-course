@@ -57,3 +57,23 @@ Enter a more sensible name for your website.
 You should immediately be able to access your site via the new domain name.
 
 ![Final Result](./assets/final_result.png)
+
+## Adding a Status Badge
+
+A status badge is an image that automatically updates to reflect the current state of your latest production deploy. You can use a markdown snippet to add this badge to the top of your `README.md` file in the root directory of your project.
+
+You can find the markdown snippet on your Netlify project page under `Settings => Status badges`.
+
+![Netlify Status Badge](./assets/status_badge.png)
+
+Add the code that looks like
+
+```markdown
+[![Netlify Status](https://api.netlify.com/api/v1/badges/04fe1515-2927-4b0c-b267-11e662a10bef/deploy-status)](https://app.netlify.com/sites/communicatie-technologie/deploys)
+```
+
+to the top of your `README.md` file, just below the title heading.
+
+The result should hopefully look like this:
+
+![Success Build](./assets/netlify_success_build.png)
