@@ -117,6 +117,10 @@ git push origin master
 
 ![Initial Push](./assets/initial_push.png)
 
+You can checkout the result on GitHub.
+
+![Successful Push to GitHub](./assets/successful_push.png)
+
 ## Adding Pages
 
 TODO
