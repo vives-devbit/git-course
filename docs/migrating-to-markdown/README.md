@@ -13,7 +13,6 @@ At this moment, Visual Studio Code is your best choice as a text editor for this
 The following plugins can come in handy:
 
 * **Code Spell Checker** (Street Side Software): Spelling checker for source code and text.
-* **Markdown All in One** (Yu Zhang): All you need to write Markdown (keyboard shortcuts, table of contents, auto preview and more
 * **markdownlin** (David Anson): Markdown linting and style checking for Visual Studio Code
 
 ### Previewing Markdown in VSCode
