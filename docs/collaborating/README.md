@@ -8,17 +8,17 @@ In order to facilitate sharing repositories cloud-based services have been devel
 
 ## GitHub
 
-[GitHub](https://github.com/) is a web-based hosting service for code. It is built upon Git and provides project management features, such as bug tracking, feature requests, task management, etc. GitHub is the largest host of source code in the world and hosts the largest open source community. It provides both public open source and private repositories. 
+[GitHub](https://github.com/) is a web-based hosting service for code. It is built upon Git and provides project management features, such as bug tracking, feature requests, task management, etc. GitHub is the largest host of source code in the world and hosts the largest open source community. It provides both public open source and private repositories.
 
-### Sign up 
+### Sign up
 
 Register your free account at [GitHub](https://github.com/).
 
 ### SSH keys
 
-GitHub uses SSH with RSA public key encryption to authenticate users with git. 
+GitHub uses SSH with RSA public key encryption to authenticate users with git.
 
-1. First, you have to generate an public/private keypair.
+1. First, you have to generate a **public/private keypair**.
 
     ```bash
     ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
@@ -40,13 +40,13 @@ GitHub uses SSH with RSA public key encryption to authenticate users with git.
 
     Press enter twice to generate a keypair without a passphrase.
 
-    Next, locate the public key *id_rsa.pub* and open it with visual studio code.
+    Next, locate the public key `id_rsa.pub` and open it with Visual Studio Code.
 
     ::: warning
-    Do not open id_rsa.pub with Publisher.
+    Do not open `id_rsa.pub` with Publisher.
     :::
 
-2. Copy the contents of id_rsa.pub.
+2. Copy the contents of `id_rsa.pub`.
 3. Then, on GitHub.com click in the upper-right corner on your profile photo, next click **Settings**.
 
     ![Click settings](./assets/userbar-account-settings.png)
@@ -66,11 +66,13 @@ GitHub uses SSH with RSA public key encryption to authenticate users with git.
 ### GitHub repository overview
 
 GitHub provides visuals of the Git repository
+
 * View commits history with contributor, diff and hash
 * View remote branches
 * View releases (git tags)
 
 Furthermore it offers project management features, not limited to:
+
 * Team members management
 * Issue management
 * Wiki
@@ -78,11 +80,12 @@ Furthermore it offers project management features, not limited to:
 
 ### Create a new repository
 
-Create a new repository on GitHub.com by clicking new. It's a good practice to create a new repository for each project.
+Create a new repository on [GitHub.com](https://github.com) by clicking new. It's a good practice to create a new repository for each project.
 
 ![Click new](./assets/create-repo.png)
 
-Choose: 
+Choose:
+
 * A repository name
 * To make it public or private
 
@@ -96,20 +99,20 @@ Repository initialization depends on whether you start from GitHub or from a loc
         git push origin master
         ```
 * Starting from GitHub
-    1. Check "initialize this repository with a README"
+    1. Check "initialize this repository with a `README.md`"
     2. Optionally choose a preconfigured gitignore file
     3. Optionally choose an open source license
     4. Clone the repository to desktop
 
 ### Cloning repositories
 
-Downloading a repository from a remote with git is called **cloning**. 
+Downloading a repository from a remote with git is called **cloning**.
 
 In order to clone a repository from GitHub navigate to the project page and click **clone or download**.
 
 ![Clone with SSH](./assets/clone.png)
 
-Then copy the URL, for example *git@github.com:vives-devbit/git-course.git*
+Then copy the URL, for example `git@github.com:vives-devbit/git-course.git`
 
 Finally, clone the repository:
 
@@ -125,7 +128,7 @@ To check the remote URL of a repository, use git remote:
 git remote -v
 ```
 
-The -v parameter of the remote command shows the remote name and URL. For example:
+The `-v` parameter of the remote command shows the remote name and URL. For example:
 
 ::: output
 origin  git@github.com:vives-devbit/git-course.git (fetch)
@@ -135,7 +138,7 @@ origin  git@github.com:vives-devbit/git-course.git (push)
 
 ### Pushing a branch to a remote
 
-Uploading commits from your local repository to a remote repository is called a **push**. Typically whole branche are pushed.
+Uploading commits from your local repository to a remote repository is called a **push**. Typically whole branches are pushed.
 
 ![Pushing the master branch to the origin](./assets/push.png)
 
@@ -146,17 +149,16 @@ git push origin master
 ```
 
 ::: tip
-The master branch is the default branch of a git repository. 
+The master branch is the default branch of a git repository.
 :::
 
 ::: warning
 It is not possible to push a branch to a remote if you did not retrieve the latest commits from the remote. Do a git pull before you push.
 :::
 
-
 ### Pulling a branch from a remote
 
-Retrieving the latest commits from a remote is called a **pull**. Typically whole branches are pulled. 
+Retrieving the latest commits from a remote is called a **pull**. Typically whole branches are pulled.
 
 ![Pulling the master branch from the origin](./assets/pull.png)
 
@@ -170,7 +172,7 @@ There are three possible outcomes after pulling a branch from a remote.
 
 1. The local and remote branch are identical. Nothing happens.
 2. The local and remote branch differ, but git automagically merges all differences without human intervention. Your local repository contains the merged branch, the remote repository did not change.
-3. The local and remote branch differ and git detects a merge conflict. Human action is required to resolve the **merge conflict**. 
+3. The local and remote branch differ and git detects a merge conflict. Human action is required to resolve the **merge conflict**.
 
 ## Merge conflicts
 
@@ -204,15 +206,15 @@ Branching is creating an alternative set of commits, which exists concurrently f
 
 ![Branching & Merging](./assets/branching.png)
 
-More accurately, a branch is a pointer to a commit. For instance, the master branch is the default branch in a git repository, which usually points to the latest commit of a stable revision of the project.
+More accurately, a branch is a pointer to a commit. For instance, the `master` branch is the default branch in a git repository, which usually points to the latest commit of a stable revision of the project.
 
 ![Master branch](./assets/master.png)
 
-The **HEAD** pointer points to the commit of the working copy. In this example, HEAD points to the same commit as the master branch. 
+The **HEAD** pointer points to the commit of the working copy. In this example, `HEAD` points to the same commit as the master branch.
 
 ![HEAD](./assets/head.png)
 
-Use the git checkout command to jump back to an old commit.
+Use the `git checkout` command to jump back to an old commit.
 
 ```bash
 git checkout <hash of the commit>
@@ -226,13 +228,13 @@ Checking out a commit without creating a branch, leaves the working copy in a de
 
 ### Create a new branch
 
-In most of the cases you want to create a new branch, i.e. a new pointer in the graph and checkout that branch. Use the checkout command with the -b parameter and give a name to the new branch.
+In most of the cases you want to create a new branch, i.e. a new pointer in the graph and checkout that branch. Use the `checkout` command with the `-b` parameter and give a name to the new branch.
 
 ```bash
 git checkout -b dev
 ```
 
-For example this command will create a dev branch and jump to the dev branch. The dev branch effectively points to the same commit as the master branch.
+For example this command will create a `dev` branch and jump to the `dev` branch. The `dev` branch effectively points to the same commit as the master branch.
 
 ![Checkout new branch dev](./assets/checkout.png)
 
@@ -242,7 +244,7 @@ Then start committing at the new branch:
 git commit -m"this message explains everything"
 ```
 
-This will move forward the dev branch and the HEAD pointer. The master branch remains unchanged.
+This will move forward the dev branch and the `HEAD` pointer. The master branch remains unchanged.
 
 ![Committing to the branch dev](./assets/commit-dev.png)
 
@@ -293,16 +295,16 @@ GitHub provides user authorization for each GitHub repository. Only team members
     ```bash
     git clone git@github.com/username/repository.git
     ```
-3. Create a feature branch 
+3. Create a feature branch
     ```bash
     git checkout -b feature/fooBar
     ```
-4. Commit your changes 
+4. Commit your changes
     ```bash
     git add .
     git commit -m "Add some fooBar"
     ```
-5. Push the branch to your GitHub repository 
+5. Push the branch to your GitHub repository
     ```bash
     git push origin feature/fooBar
     ```
