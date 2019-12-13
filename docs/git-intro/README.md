@@ -12,7 +12,7 @@ The git init command will initialize a new repository.
 
 ![Repository](./assets/repository.png)
 
-Actually git creates a new repository in a hidden *.git* folder. If you remove the *.git* folder you are actually removing the repository. 
+Actually git creates a new repository in a hidden `.git` folder. If you remove the `.git` folder you are actually removing the repository.
 
 Furthermore, do not create a new repository inside another git repository.
 
@@ -37,10 +37,10 @@ Added: prod/test
 Removed: staging/test
 ```
 
-* Who? The author of the commit is registered in the git config.
-* When? The timestamp when the commit was made.
-* Why? This is a message provided by the author, which explains why the commit was made. A typical mistake is to desribe what has been committed, however this is already included in the commit. Note that many developers like to use the present tense in their commit messages. This makes them read like actions on the repository.
-* What? These are the actual changes added or removed in this commit with regard to the previous commit.
+* **Who?** The author of the commit is registered in the git config.
+* **When?** The timestamp when the commit was made.
+* **Why?** This is a message provided by the author, which explains why the commit was made. A typical mistake is to describe what has been committed, however this is already included in the commit. Note that many developers like to use the present tense in their commit messages. This makes them read like actions on the repository.
+* **What?** These are the actual changes added or removed in this commit with regard to the previous commit.
 
 ### Staging the commit
 
@@ -121,7 +121,12 @@ Once the staging area is in the desired state, commit all staged changes with
 git commit -m"tell why you made the commit in this commit message"
 ```
 
-Provide a suitable commit message. If you forgot the -m parameter git will start the default editor to construct a message.
+Provide a suitable commit message. If you forgot the `-m` parameter git will start the default editor to construct a message.
+
+:::tip Getting out of Vim
+If you find yourself dropped in an editor you cannot seem to quit, you will probable find yourself inside of Vim. You can type your commit message after pressing `ESC` followed by `i` for insert.
+To quit and save, press `ESC`, `:qw!`.
+:::
 
 ## Viewing
 
