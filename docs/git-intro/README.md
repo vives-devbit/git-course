@@ -134,7 +134,7 @@ A git repository contains a lot of information. Getting an overview of all commi
 
 ### View the log
 
-Git log gives an overview of all commits.
+The `git log` command gives an overview of all commits.
 
 ```bash
 git log
@@ -162,24 +162,24 @@ Date:   Thu Dec 12 09:24:21 2019 +0100
 To view a condensed log containing only the commit hashes and messages
 
 ```bash
-git log --pretty=oneline
+git log --oneline
 ```
 
 ### View changes between commits
 
-Git diff shows all differences between two commits, the staging area or the working copy.
+The `git diff` command shows all differences between two commits, the staging area or the working copy.
 
-To show differences between the working copy and the HEAD commit:
+To show differences between the working copy and the `HEAD` commit:
 
 ```bash
 git diff
 ```
 
 ::: tip
-The HEAD commit is the latest commit in the current branch.
+The `HEAD` commit is the latest commit in the current branch.
 :::
 
-Viewing the differences between the staging area and the HEAD commit:
+Viewing the differences between the staging area and the `HEAD` commit:
 
 ```bash
 git diff --staged
@@ -193,7 +193,7 @@ git diff 1240e9a 15cf28a
 
 ## Undoing changes
 
-Reverting all changes in the working copy which have not been staged or committed yet can be done with:
+Undoing the changes of a particular file in the working copy which have not been staged or committed yet can be done with:
 
 ```bash
 git restore <file>
