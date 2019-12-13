@@ -18,7 +18,7 @@ When installed correctly, open a command prompt \(hit windows key, start typing 
 git
 ```
 
-When you type in the command git, the following output is given, if Git is installed successfully and it has been added to the `PATH` environment variable.
+When you type in the command `git`, the following output is given, if Git is installed successfully and it has been added to the `PATH` environment variable.
 
 ```bash
 usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
@@ -74,7 +74,7 @@ Open a new Powershell window. If your current directory contains a git repositor
 
 ![Posh-git example](./assets/posh-git.png)
 
-Note: if your account is not the administrator, *Add-PoshGitToProfile* will add posh-git to the administrator profile. In that case you need to manually edit the Powershell profile script.
+Note: if your account is not the administrator, `Add-PoshGitToProfile` will add posh-git to the administrator profile. In that case you need to manually edit the Powershell profile script.
 
 ```bash
 notepad $profile.CurrentUserAllHosts
