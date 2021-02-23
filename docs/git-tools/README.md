@@ -91,9 +91,3 @@ Basically it is a great editor for markdown and many other coding projects.
 Navigate to [code.visualstudio.com](https://code.visualstudio.com/) and download the latest version.
 
 Follow the installation wizard.
-
-## Fork.dev
-
-Fork is a modern git GUI client. Although this course focusses on command line tools, Fork is a nice graphical alternative.
-
-Download the [Fork installer](https://fork.dev/).
