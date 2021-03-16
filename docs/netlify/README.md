@@ -8,7 +8,7 @@ Their free tier includes unlimited personal and commercial projects, HTTPS, cont
 
 ## Creating an Account
 
-First action to perform is to create a Netlify account. Natigate to [netlify.com](https://www.netlify.com/) and click the `Sign up` button.
+First action to perform is to create a Netlify account. Navigate to [netlify.com](https://www.netlify.com/) and click the `Sign up` button.
 
 Luckily this is a quick and painless operation if you choose to login using your GitHub account. You will need to provide access to your GitHub profile.
 
